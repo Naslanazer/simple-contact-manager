@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+
+<div class="container">
+
+    <h1>Contact Management System</h1>
+    <p><center>This is a place to mange and modify as well as view contacts.</p></center>
+    <br></br>
+    <div class="form-container">
+
+        <h2 id="form-title">Add Contact Details</h2>
+
+        <form id="contactForm">
+
+            <input type="hidden" id="contactId">
+
+            <label>Name</label>
+            <input type="text" id="name" required>
+
+            <label>Email</label>
+            <input type="email" id="email">
+
+            <label>Phone</label>
+            <input type="text" id="phone">
+
+            <label>Address</label>
+            <textarea id="address"></textarea>
+
+            <button type="submit" id="submitBtn">
+                Add Contact details
+            </button>
+
+            <button type="button" id="cancelBtn" class="cancel">
+                Cancel
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="contacts-container">
+
+        <h2>Contact List</h2>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search contacts..."
+        >
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="contactTable">
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
